@@ -29,7 +29,7 @@
   {
     "image": "",
     "name": "chitchat",
-    "description": "A secure, end-to-end encrypted instant messaging app.",
+    "description": "A secure instant messaging application built with end-to-end encryption for private communication. It allows users to send and receive text messages securely without exposing their data to third parties.",
     "github": "https://github.com/aayushjoshi2709/chitchat",
     "tech": [
       "Node.js",
