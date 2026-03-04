@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,27 +12,26 @@
     <script src="./index.js"></script>
   </head>
   <body class="text-white">
-    <nav class="p-4 px-8 bg-black text-white flex items-center justify-between border-b-2 border-white-300">
+    <nav class="p-4 px-8 fixed w-full bg-black text-white flex items-center justify-between border-b-2 border-white-300">
         <h1 class="text-2xl font-bold">Aayush Joshi</h1>
         <ul class="flex gap-8 flex-row text-xl">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li>Contact</li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <main id="about" class="p-8 flex items-center justify-center h-screen">
+    <main id="about" class="p-8 pt-16 flex items-center justify-center h-screen">
         <div class="text-center flex-row gap-16 text-white typewriter">
-            <img id="profile-picture" alt="Profile Picture" class="w-56 h-56 rounded-full mx-auto m-8">
+            <img id="profile-picture" src="./images/profilePic.jpeg" alt="Profile Picture" class="w-56 h-56 rounded-full mx-auto m-8">
             <div>
                 <h2 class="text-xl font-bold">Hi There...</h2>
             </div>
             <div class="my-4">
-                <h2 class="text-4xl  font-bold">I’m Aayush Joshi</h2> 
+                <h2 class="text-4xl font-bold">I’m Aayush Joshi</h2> 
             </div>
             <div class="mt-4 mb-16 text-xl">
                 <p>A Software Developer passionate about building scalable systems and exploring new technologies. 
-                <p>I enjoy solving real-world problems, optimizing performance, and continuously improving my engineering skills.</p>
-                <p>If you want you can get a tour of a few projects i have build ...</p>
+                <p>If you want you can get a tour of a few projects i have build by clicking the button below</p>
             </div>
             <a href="#projects">
                 <button id="project-navigation" class="text-[#1a202c] disabled text-6xl"><i class="fa-solid fa-chevron-down"></i></button>
@@ -41,9 +40,28 @@
         </div>
     </main>
 
-    <section id="projects"  class="p-8 flex justify-center h-screen">
+    <section id="projects" class="p-8 pt-16 flex justify-center h-screen">
         <h2 class="text-4xl mt-16 font-bold">Projects</h2>
     </section>
+
+    <aside id="contact" class="p-8 flex items-center justify-center h-screen">
+        <div>
+            <h2 class="text-4xl  m-8 font-bold text-center">Contact</h2>
+            <form class="max-w-lg  mx-auto text-center">
+                <div>
+                    <input class="border-b-2 focus:outline-none p-2 mb-2 w-100" placeholder="Email">
+                </div>
+                <div>
+                    <input class="border-b-2 focus:outline-none p-2 mb-2 w-100" placeholder="Subject">
+                </div>
+                <div>
+                    <input class="border-b-2 focus:outline-none p-2 mb-2 w-100" placeholder="Context">
+                </div>
+                <button type="submit" class="m-2 p-2 font-bold">Submit</button>
+                <button type="cancel" class="m-2 p-2 font-bold">Cancel</button>
+            </form>
+        </div>
+    </aside>
 
   </body>
 </html>

@@ -1,24 +1,3 @@
-const GITHUB_API_BASE_URL = "https://api.github.com";
-const getProfilePicture = async () => {
-  try {
-    const response = await fetch(
-      `${GITHUB_API_BASE_URL}/users/aayushjoshi2709`,
-    );
-    const userData = await response.json();
-
-    const img = document.getElementById("profile-picture");
-    if (img) {
-      img.src = userData.avatar_url;
-    }
-  } catch (error) {
-    console.error("Failed to fetch profile picture:", error);
-  }
-};
-
-const getPublicProjectDetails = async () => {
-    
-};
-
 const setTypingEffect = () => {
   const h1elements = document.querySelectorAll(".typewriter h2");
   let ms_delay = 1000;
@@ -50,8 +29,6 @@ const setTypingEffect = () => {
 };
 
 const init = () => {
-  getProfilePicture();
-
   const profilePic = document.getElementById("profile-picture");
   profilePic.onload = () => {
     setTimeout(() => {
