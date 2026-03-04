@@ -10,7 +10,7 @@
       "MongoDB",
       "SQS"
     ],
-    "live": ""
+    "live": "https://mypic.iamaayushjoshi.com"
   },
   {
     "image": "",
@@ -24,7 +24,7 @@
       "MongoDB",
       "SQS"
     ],
-    "live": ""
+    "live": "https://myvid.iamaayushjoshi.com"
   },
   {
     "image": "",
@@ -36,7 +36,7 @@
       "React.js",
       "MongoDB"
     ],
-    "live": ""
+    "live": "https://chitchat.iamaayushjoshi.com"
   }, 
   {
     "image": "",
@@ -48,6 +48,6 @@
       "React.js",
       "MongoDB"
     ],
-    "live": ""
+    "live": "https://findmycollege.iamaayushjoshi.com"
   }
 ]
