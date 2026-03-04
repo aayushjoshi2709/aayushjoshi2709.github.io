@@ -1,8 +1,49 @@
+<!doctype html>
 <html>
-    <head>
-        <title>Aayush Joshi | Portfolio</title>
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+  </head>
+  <body class="text-white">
+    <nav class="p-4 px-8 bg-black text-white flex items-center justify-between border-b-2 border-white-300">
+        <h1 class="text-2xl font-bold">Aayush Joshi</h1>
+        <ul class="flex gap-8 flex-row text-xl">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main id="about" class="p-8 flex items-center justify-center h-screen">
+        <div class="text-center flex-row gap-16 text-white typewriter">
+            <img id="profile-picture" alt="Profile Picture" class="w-56 h-56 rounded-full mx-auto m-8">
+            <div>
+                <h2 class="text-xl font-bold">Hi There...</h2>
+            </div>
+            <div class="my-4">
+                <h2 class="text-4xl  font-bold">I’m Aayush Joshi</h2> 
+            </div>
+            <div class="mt-4 mb-16 text-xl">
+                <p>A Software Developer passionate about building scalable systems and exploring new technologies. 
+                <p>I enjoy solving real-world problems, optimizing performance, and continuously improving my engineering skills.</p>
+                <p>If you want you can get a tour of a few projects i have build ...</p>
+            </div>
+            <a href="#projects">
+                <button id="project-navigation" class="text-[#1a202c] disabled text-6xl"><i class="fa-solid fa-chevron-down"></i></button>
+            </a>
+            
+        </div>
+    </main>
+
+    <section id="projects"  class="p-8 flex justify-center h-screen">
+        <h2 class="text-4xl mt-16 font-bold">Projects</h2>
+    </section>
+
+  </body>
 </html>
