@@ -13,7 +13,7 @@
   </head>
   <body class="text-white">
     <nav class="p-4 px-8 fixed w-full bg-black text-white flex items-center justify-between border-b-2 border-white-300">
-        <h1 class="text-2xl font-bold">Aayush Joshi</h1>
+        <h1 class="text-2xl font-bold"><a href="#about">Aayush Joshi</a></h1>
         <ul class="flex gap-8 flex-row text-xl">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -22,7 +22,7 @@
     </nav>
     <main id="about" class="p-8 pt-16 flex items-center justify-center h-screen">
         <div class="text-center flex-row gap-16 text-white typewriter">
-            <img id="profile-picture" src="./images/profilePic.jpeg" alt="Profile Picture" class="w-56 h-56 rounded-full mx-auto m-8">
+            <img id="profile-picture" src="./images/profilePic.jpeg" alt="Profile Picture" class="w-56 h-56 rounded-full mx-auto m-8 grayscale hover:grayscale-0 transition duration-300">
             <div>
                 <h2 class="text-xl font-bold">Hi There...</h2>
             </div>
@@ -47,18 +47,18 @@
     <aside id="contact" class="p-8 flex items-center justify-center h-screen">
         <div>
             <h2 class="text-4xl  m-8 font-bold text-center">Contact</h2>
-            <form class="max-w-lg  mx-auto text-center">
+            <form action="mailto:aayushjoshi2709@gmail.com" method="POST" enctype="text/plain" class="max-w-lg mx-auto text-center">
                 <div>
-                    <input class="border-b-2 focus:outline-none p-2 mb-2 w-100" placeholder="Email">
+                    <input type="email" name="email" class="border-b-2 focus:outline-none p-2 mb-2 w-100" placeholder="Email">
                 </div>
                 <div>
-                    <input class="border-b-2 focus:outline-none p-2 mb-2 w-100" placeholder="Subject">
+                    <input type="text" name="subject" class="border-b-2 focus:outline-none p-2 mb-2 w-100" placeholder="Subject">
                 </div>
                 <div>
-                    <input class="border-b-2 focus:outline-none p-2 mb-2 w-100" placeholder="Context">
+                    <input name="message" class="border-b-2 focus:outline-none p-2 mb-2 w-100" placeholder="Message">
                 </div>
-                <button type="submit" class="m-2 p-2 font-bold">Submit</button>
-                <button type="cancel" class="m-2 p-2 font-bold">Cancel</button>
+                <button type="submit" class="m-2 p-2 font-bold border-b-2 border-transparent hover:border-white">Send</button>
+                <button type="cancel" class="m-2 p-2 font-bold border-b-2 border-transparent hover:border-white">Cancel</button>
             </form>
         </div>
     </aside>

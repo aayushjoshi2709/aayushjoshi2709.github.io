@@ -12,6 +12,11 @@ body {
     width: 0;
 }
 
+#profile-picture{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); 
+}
+
 
 @keyframes typing {
     from { width: 0 }
