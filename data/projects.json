@@ -1,0 +1,28 @@
+[
+  {
+    "image": "",
+    "name": "MyVid",
+    "description": "MyVid is a video-sharing platform similar to YouTube or Twitch, designed to provide a rich ecosystem for uploading, sharing, and viewing videos.",
+    "github": "https://github.com/aayushjoshi2709/myvid",
+    "tech": [
+      "Java",
+      "Spring Boot",
+      "Postgres",
+      "MongoDB",
+      "SQS"
+    ],
+    "live": ""
+  },
+  {
+    "image": "",
+    "name": "chitchat",
+    "description": "A secure, end-to-end encrypted instant messaging app.",
+    "github": "https://github.com/aayushjoshi2709/chitchat",
+    "tech": [
+      "Node.js",
+      "React.js",
+      "MongoDB"
+    ],
+    "live": ""
+  }
+]
