@@ -7,13 +7,13 @@ const projectData = fetch("./data/projects.json")
       technology_div = "";
       for (tech of data.tech) {
         technology_div += `
-            <div class="p-1 px-4 rounded border-1 m-2">
+            <div class="p-1 px-4 rounded border-1 m-2 hover:bg-white hover:text-black">
                 ${tech}
             </div>
         `;
       }
       projectCrousal.innerHTML += `
-            <div class="flex-col shadow-lg rounded-xl p-4 w-sm border-1 space-between">
+            <div class="flex-col shadow-lg rounded-xl p-0 md:p-4 p-2 md:w-sm w-[360px] border-1 space-between">
                 <img  class="aspect-[4/3] w-full object-contain" src=${data.image || "./images/github.png"}>
                 <div class="flex-row space-between flex-1">
                     <h3 class="text-2xl text-bold m-4">${data.name}</h3>
