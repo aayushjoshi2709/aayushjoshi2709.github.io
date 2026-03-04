@@ -1,5 +1,4 @@
 const projectCrousal = document.getElementById("project-crousal");
-console.log(projectCrousal);
 const projectData = fetch("./data/projects.json")
   .then((res) => res.json())
   .then((projectData) => {
