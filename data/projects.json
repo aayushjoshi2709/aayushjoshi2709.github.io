@@ -1,6 +1,19 @@
 [
   {
     "image": "",
+    "name": "MyPic",
+    "description": "An application designed to organize, view, and share images and videos in one place. It allows users to easily browse through media files, manage their collections, and quickly access their content.",
+    "github": "https://github.com/aayushjoshi2709/mypic",
+    "tech": [
+      "Go Lang",
+      "AWS",
+      "MongoDB",
+      "SQS"
+    ],
+    "live": ""
+  },
+  {
+    "image": "",
     "name": "MyVid",
     "description": "MyVid is a video-sharing platform similar to YouTube or Twitch, designed to provide a rich ecosystem for uploading, sharing, and viewing videos.",
     "github": "https://github.com/aayushjoshi2709/myvid",
@@ -20,6 +33,18 @@
     "github": "https://github.com/aayushjoshi2709/chitchat",
     "tech": [
       "Node.js",
+      "React.js",
+      "MongoDB"
+    ],
+    "live": ""
+  }, 
+  {
+    "image": "",
+    "name": "Find My College",
+    "description": "An application that helps students find and apply to their favorite colleges based on their interests and goals. It provides information about different colleges, courses, and streams to help students make better decisions.",
+    "github": "https://github.com/aayushjoshi2709/findmycollege",
+    "tech": [
+      "Nest.js",
       "React.js",
       "MongoDB"
     ],
