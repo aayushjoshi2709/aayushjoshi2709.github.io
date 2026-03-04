@@ -30,11 +30,18 @@ const setTypingEffect = () => {
 
 const init = () => {
   const profilePic = document.getElementById("profile-picture");
-  profilePic.onload = () => {
+
+  const start = () => {
     setTimeout(() => {
       setTypingEffect();
     }, 500);
   };
+
+  if (profilePic.complete) {
+    start();
+  } else {
+    profilePic.onload = start;
+  }
 };
 
 document.addEventListener("DOMContentLoaded", init);
