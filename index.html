@@ -8,10 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
     <script src="./index.js"></script>
   </head>
-  <body class="text-white">
+  <body class="text-white bg-[#1a202c] [font-family:'Delius',cursive]">
     <nav class="p-4 px-8 fixed z-50 w-full bg-black text-white flex items-center justify-between border-b-2 border-white-300 flex-wrap">
         <h1 class="text-2xl font-bold"><a href="#about">Aayush Joshi</a></h1>
         <ul class="gap-4 md:gap-8 hidden md:flex flex-row  mt-8 md:mt-0 text-xl w-full md:w-auto">
@@ -24,16 +23,16 @@
         <div class="text-center flex-row gap-16 text-white">
             <img id="profile-picture" src="./images/profilePic.jpeg" alt="Profile Picture" class="w-56 h-56 rounded-full mx-auto m-8 grayscale hover:grayscale-0">
             <div>
-                <h2 class="text-xl font-bold">Hi There...</h2>
+                <h2 class="text-xl font-bold transform hover:scale-120 transition duration-300">Hi There...</h2>
             </div>
-            <div class="my-4">
-                <h2 class="text-4xl font-bold">I’m Aayush Joshi</h2> 
+            <div class="mt-4 mb-8">
+                <h2 class="text-4xl font-bold transform hover:scale-150 transition duration-300">I’m Aayush Joshi</h2> 
             </div>
             <div class="mt-4 mb-16 text-xl">
-                <p>A Software Developer passionate about building scalable systems and exploring new technologies. 
-                <p class="hidden md:block">If you want you can get a tour of a few projects i have build by clicking the button below</p>
+                <p class="transform hover:scale-102 transition duration-300">A Software Developer passionate about building scalable systems and exploring new technologies. 
+                <p class="hidden md:block mt-2 transform hover:scale-103 transition duration-300">If you want you can get a tour of a few projects i have build by clicking the button below</p>
             </div>
-            <a href="#projects" class="hidden md:block">
+            <a href="#projects" class="hidden md:block transform hover:scale-150 transition duration-300">
                 <button id="project-navigation" class="text-6xl"><i class="fa-solid fa-chevron-down"></i></button>
             </a>
             
@@ -42,16 +41,16 @@
 
     <section id="projects" class="p-8 pt-16 flex justify-center h-screen">
         <div class="text-center">
-            <h2 class="text-4xl mt-16 m-4 font-bold">Projects</h2>
-            <p class="m-2 text-lg">I believe projects are the true ways to showcase your abilities</p>
-            <p class="m-2 text-lg">Here are few of mine...</p>
+            <h2 class="text-4xl mt-16 m-8 font-bold transform hover:scale-150 transition duration-300">Projects</h2>
+            <p class="m-2 text-lg transform hover:scale-120 transition duration-300">I believe projects are the true ways to showcase your abilities</p>
+            <p class="m-2 text-lg transform hover:scale-110 transition duration-300">Here are few of mine...</p>
         </div>
     </section>
 
     <aside id="contact" class="p-8 flex items-center justify-center h-screen">
         <div>
-            <h2 class="text-4xl  m-8 font-bold text-center">Contact</h2>
-            <p class="m-2 text-lg text-center">Here's how you can reach out to me...</p>
+            <h2 class="text-4xl  m-8 font-bold text-center transform border-bottom-0 hover:border-bottom-1 hover:scale-150 transition duration-300">Contact</h2>
+            <p class="m-2 text-lg text-center transform hover:scale-105 transition duration-300">Here's how you can reach out to me...</p>
             <form action="mailto:aayushjoshi2709@gmail.com" method="POST" enctype="text/plain" class="max-w-lg mx-auto text-center">
                 <input type="email" name="email" class="border-b-2 focus:outline-none p-2 mb-2 w-full" placeholder="Email">
                 <input type="text" name="subject" class="border-b-2 focus:outline-none p-2 mb-2 w-full" placeholder="Subject">

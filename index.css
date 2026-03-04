@@ -1,9 +1,0 @@
-body {
-    font-family: 'Delius', cursive;
-    background-color: #1a202c;
-}
-
-#profile-picture{
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); 
-}
