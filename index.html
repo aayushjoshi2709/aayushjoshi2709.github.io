@@ -6,61 +6,79 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/flowbite@1.8.1/dist/flowbite.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
   </head>
   <body class="text-white bg-[#1a202c] [font-family:'Delius',cursive]">
-    <nav class="p-4 px-8 fixed z-50 w-full bg-black text-white flex items-center justify-between border-b-2 border-white-300 flex-wrap">
+    <nav class="p-4 md:px-8 fixed z-50 w-full bg-black text-white flex items-center justify-between border-b-2 border-white-300 flex-wrap">
         <h1 class="text-2xl font-bold"><a href="#about">Aayush Joshi</a></h1>
-        <ul class="gap-4 md:gap-8 hidden md:flex flex-row  mt-8 md:mt-0 text-xl w-full md:w-auto">
-            <li class="w-full md:w-auto"><a href="#about">About</a></li>
-            <li class="w-full md:w-auto"><a href="#projects">Projects</a></li>
-            <li class="w-full md:w-auto"><a href="#contact">Contact</a></li>
-        </ul>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base lg:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+        </button>
+        <div class="hidden w-full lg:block lg:w-auto mt-2 lg:mt-0" id="navbar-default">
+            <ul class="gap-8 flex-row md:mt-0 text-xl w-full md:w-auto">
+                <li class="w-full md:w-auto hover:text-blue-300"><a href="#about">About</a></li>
+                <li class="w-full md:w-auto hover:text-blue-300"><a href="#projects">Projects</a></li>
+                <li class="w-full md:w-auto hover:text-blue-300"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <main id="about" class="p-4 md:p-8 pt-32 flex items-center justify-center min-h-screen">
+    <div class="w-full flex flex-col justify-center p-4 md:p-8">
+    <main id="about" class="pt-16 md:pt-32 flex items-center justify-center min-h-screen">
         <div class="text-center flex-row gap-16 text-white">
             <img id="profile-picture" src="./images/profilePic.jpeg" alt="Profile Picture" class="w-56 h-56 rounded-full mx-auto m-8 grayscale hover:grayscale-0">
             <div>
-                <h2 class="text-xl font-bold transform hover:scale-120 transition duration-300">Hi There...</h2>
+                <h2 class="text-xl font-bold transform hover:scale-120 transition duration-300 hover:text-blue-300">Hi There...</h2>
             </div>
             <div class="mt-4 mb-8">
-                <h2 class="text-4xl font-bold transform hover:scale-150 transition duration-300">I’m Aayush Joshi</h2> 
+                <h2 class="text-4xl font-bold transform hover:scale-150 transition duration-300 hover:text-green-300">I’m Aayush Joshi</h2> 
             </div>
-            <div class="mt-4 mb-16 text-xl">
-                <p class="transform hover:scale-102 transition duration-300">A Software Developer passionate about building scalable systems and exploring new technologies. 
-                <p class="hidden md:block mt-2 transform hover:scale-103 transition duration-300">If you want you can get a tour of a few projects i have build by clicking the button below</p>
+            <div class="mt-4 text-xl">
+                <p class="transform hover:scale-102 transition duration-300 hover:text-blue-300">A Software Developer passionate about building scalable systems and exploring new technologies. 
+                <p class="hidden md:block mt-2 transform hover:scale-103 transition duration-300 hover:text-blue-300">If you want you can get a tour of a few projects i have build by clicking the button below</p>
             </div>
-            <a href="#projects" class="hidden md:block transform hover:scale-150 transition duration-300">
-                <button id="project-navigation" class="text-6xl"><i class="fa-solid fa-chevron-down"></i></button>
-            </a>
+            <div class="mt-8 m:mt-16">
+                <a href="#projects">
+                    <button id="project-navigation" class="text-6xl transform  hover:scale-150 transition duration-300 hover:text-blue-300"><i class="fa-solid fa-chevron-down"></i></button>
+                </a>
+            </div>
             
         </div>
     </main>
 
-    <section id="projects" class="p-2 md:p-8 pt-16 flex justify-center min-h-screen">
+    <section id="projects" class="pt-8 md:pt-24 flex justify-center min-h-screen">
         <div class="text-center flex-row w-full  align-center items-center justify-center">
-            <h2 class="text-4xl mt-16 m-8 font-bold transform hover:scale-150 transition duration-300">Projects</h2>
-            <p class="m-2 text-lg transform hover:scale-120 transition duration-300">I believe projects are the true ways to showcase your abilities</p>
-            <p class="m-2 text-lg transform hover:scale-110 transition duration-300">Here are few of mine...</p>
-            <div id="project-crousal"  class="flex flex-wrap mt-24 gap-6 w-full align-center justify-center">
+            <h2 class="text-4xl mt-16 m-8 font-bold transform hover:scale-150 transition duration-300 hover:text-blue-300">Projects</h2>
+            <p class="m-2 text-lg transform hover:scale-120 transition duration-300 hover:text-blue-300">I believe projects are the true ways to showcase your abilities</p>
+            <p class="m-2 text-lg transform hover:scale-110 transition duration-300 hover:text-blue-300">Here are few of mine...</p>
+            <div id="project-crousal"  class="flex flex-wrap mt-16 md:mt-24 gap-6 w-full align-center justify-center">
+            </div>
+            <div class="mt-16">
+                <a href="#contact">
+                    <button id="project-navigation" class="text-6xl transform  hover:scale-150 transition duration-300 hover:text-blue-300"><i class="fa-solid fa-chevron-down"></i></button>
+                </a>
             </div>
         </div>
     </section>
 
-    <aside id="contact" class="p-4 md:p-8 flex items-center justify-center min-h-screen">
+    <aside id="contact" class="flex items-center justify-center min-h-screen">
         <div>
-            <h2 class="text-4xl  m-8 font-bold text-center transform border-bottom-0 hover:border-bottom-1 hover:scale-150 transition duration-300">Contact</h2>
-            <p class="m-2 text-lg text-center transform hover:scale-105 transition duration-300">Here's how you can reach out to me...</p>
+            <h2 class="text-4xl  m-4 font-bold text-center transform border-bottom-0 hover:border-bottom-1 hover:scale-150 transition duration-300 hover:text-blue-300">Contact</h2>
+            <p class="m-2 text-lg text-center transform hover:scale-105 transition duration-300 hover:text-blue-300">Here's how you can reach out to me...</p>
             <form action="mailto:aayushjoshi2709@gmail.com" method="POST" enctype="text/plain" class="max-w-lg mx-auto text-center">
                 <input type="email" name="email" class="border-b-2 focus:outline-none p-2 mb-2 w-full" placeholder="Email">
                 <input type="text" name="subject" class="border-b-2 focus:outline-none p-2 mb-2 w-full" placeholder="Subject">
                 <input name="message" class="border-b-2 focus:outline-none p-2 mb-2 w-full" placeholder="Message">
-                <button type="submit" class="m-2 p-2 font-bold border-b-2 border-transparent hover:border-white">Send</button>
-                <button type="reset" class="m-2 p-2 font-bold border-b-2 border-transparent hover:border-white">Cancel</button>
+                <button type="submit" class="m-2 p-2 font-bold border-b-2 border-transparent hover:border-blue-300 hover:text-blue-300">Send</button>
+                <button type="reset" class="m-2 p-2 font-bold border-b-2 border-transparent hover:border-blue-300 hover:text-blue-300">Cancel</button>
             </form>
         </div>
     </aside>
+    
+    </div>
     <script src="./index.js"></script>
+
   </body>
 </html>

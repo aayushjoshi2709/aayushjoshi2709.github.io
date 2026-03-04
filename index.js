@@ -13,7 +13,7 @@ const projectData = fetch("./data/projects.json")
         `;
       }
       projectCrousal.innerHTML += `
-            <div class="flex-col shadow-lg rounded-xl p-0 md:p-4 p-2 md:w-sm w-[360px] border-1 space-between">
+            <div class="flex-col shadow-lg rounded-xl py-4 px-0 md:p-4 md:w-sm w-full border-1 space-between">
                 <img  class="aspect-[4/3] w-full object-contain" src=${data.image || "./images/github.png"}>
                 <div class="flex-row space-between flex-1">
                     <h3 class="text-2xl text-bold m-4">${data.name}</h3>
@@ -23,13 +23,13 @@ const projectData = fetch("./data/projects.json")
                     <div>
                     <div class="mt-2 justify-center w-100">
                         <a target="_blank" href="${data.github}">
-                            <button class="text-xl mx-4 transform hover:scale-110 transition duration-300 border-b-2 border-transparent hover:border-white">
+                            <button class="text-xl mx-4 transform hover:scale-110 transition duration-300 border-b-2 border-transparent hover:border-blue-300 hover:text-blue-300">
                                 Github Link
                             </button>
                         </a>
 
                         <a target="_blank" href="${data.live || data.github}">
-                            <button class="text-xl mx-4 transform hover:scale-110 transition duration-300 border-b-2 border-transparent hover:border-white">
+                            <button class="text-xl mx-4 transform hover:scale-110 transition duration-300 border-b-2 border-transparent hover:border-blue-300 hover:text-blue-300">
                                 Live Link
                             </button>
                         </a>
