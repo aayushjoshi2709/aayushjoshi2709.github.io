@@ -34,7 +34,8 @@
     "tech": [
       "Node.js",
       "React.js",
-      "MongoDB"
+      "MongoDB",
+      "Redis"
     ],
     "live": "https://chitchat.iamaayushjoshi.com"
   }, 
